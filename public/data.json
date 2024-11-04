@@ -1,0 +1,256 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://example.com/images/dell_xps_13.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "High-performance laptop with 13-inch InfinityEdge display.",
+      "Specification": ["Intel i7", "16GB RAM", "512GB SSD", "13.3-inch display"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 2,
+      "product_title": "HP Spectre x360",
+      "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+      "category": "Laptop",
+      "price": 1399.99,
+      "description": "Convertible laptop with touchscreen and stylus support.",
+      "Specification": ["Intel i5", "8GB RAM", "256GB SSD", "13.5-inch display"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 3,
+      "product_title": "MacBook Air M1",
+      "product_image": "https://example.com/images/macbook_air_m1.jpg",
+      "category": "Laptop",
+      "price": 999.99,
+      "description": "Apple’s lightweight laptop with M1 chip for high efficiency.",
+      "Specification": ["Apple M1", "8GB RAM", "256GB SSD", "13.3-inch Retina display"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 4,
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://example.com/images/lenovo_thinkpad_x1.jpg",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "Durable business laptop with top-notch security features.",
+      "Specification": ["Intel i7", "16GB RAM", "1TB SSD", "14-inch display"],
+      "availability": false,
+      "rating": 4.5
+    },
+    {
+      "product_id": 5,
+      "product_title": "ASUS ROG Zephyrus G14",
+      "product_image": "https://example.com/images/asus_rog_g14.jpg",
+      "category": "Laptop",
+      "price": 1449.99,
+      "description": "Powerful gaming laptop with Ryzen 9 processor.",
+      "Specification": ["AMD Ryzen 9", "16GB RAM", "512GB SSD", "14-inch display"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 6,
+      "product_title": "Acer Swift 3",
+      "product_image": "https://example.com/images/acer_swift_3.jpg",
+      "category": "Laptop",
+      "price": 749.99,
+      "description": "Affordable and lightweight laptop with good battery life.",
+      "Specification": ["Intel i5", "8GB RAM", "512GB SSD", "14-inch display"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": 7,
+      "product_title": "Samsung Galaxy S22",
+      "product_image": "https://example.com/images/samsung_galaxy_s22.jpg",
+      "category": "Phone",
+      "price": 899.99,
+      "description": "High-end Android phone with great camera and display.",
+      "Specification": ["128GB Storage", "6.2-inch Display", "Triple Camera"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 8,
+      "product_title": "Google Pixel 6",
+      "product_image": "https://example.com/images/google_pixel_6.jpg",
+      "category": "Phone",
+      "price": 799.99,
+      "description": "Google's flagship phone with pure Android experience.",
+      "Specification": ["128GB Storage", "6.4-inch Display", "Dual Camera"],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": 9,
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://example.com/images/iphone_13_pro.jpg",
+      "category": "Phone",
+      "price": 1099.99,
+      "description": "Apple's advanced smartphone with Pro camera system.",
+      "Specification": ["256GB Storage", "6.1-inch Display", "Triple Camera"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 10,
+      "product_title": "OnePlus 9 Pro",
+      "product_image": "https://example.com/images/oneplus_9_pro.jpg",
+      "category": "Phone",
+      "price": 969.99,
+      "description": "Flagship smartphone with fast charging and smooth performance.",
+      "Specification": ["128GB Storage", "6.7-inch Display", "Quad Camera"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 11,
+      "product_title": "Sony WH-1000XM4",
+      "product_image": "https://example.com/images/sony_wh_1000xm4.jpg",
+      "category": "Accessory",
+      "price": 349.99,
+      "description": "Industry-leading noise-canceling headphones.",
+      "Specification": ["Wireless", "Noise Cancelling", "30-hour Battery"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 12,
+      "product_title": "Apple AirPods Pro",
+      "product_image": "https://example.com/images/apple_airpods_pro.jpg",
+      "category": "Accessory",
+      "price": 249.99,
+      "description": "Noise-canceling in-ear headphones from Apple.",
+      "Specification": ["Wireless", "Noise Cancelling", "Sweat-resistant"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 13,
+      "product_title": "Anker PowerCore 20000",
+      "product_image": "https://example.com/images/anker_powercore_20000.jpg",
+      "category": "Accessory",
+      "price": 49.99,
+      "description": "Portable charger with high-speed charging technology.",
+      "Specification": ["20000mAh", "Fast Charging", "USB-C"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 14,
+      "product_title": "Logitech MX Master 3",
+      "product_image": "https://example.com/images/logitech_mx_master_3.jpg",
+      "category": "Accessory",
+      "price": 99.99,
+      "description": "High precision ergonomic wireless mouse.",
+      "Specification": ["Wireless", "Ergonomic", "Fast Scroll"],
+      "availability": false,
+      "rating": 4.8
+    },
+    {
+      "product_id": 15,
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://example.com/images/apple_watch_series_7.jpg",
+      "category": "Smartwatch",
+      "price": 399.99,
+      "description": "Advanced smartwatch with fitness and health tracking features.",
+      "Specification": ["GPS", "Heart Rate Monitor", "Blood Oxygen Sensor"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 16,
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://example.com/images/galaxy_watch_4.jpg",
+      "category": "Smartwatch",
+      "price": 299.99,
+      "description": "Samsung's latest smartwatch with Wear OS.",
+      "Specification": ["GPS", "ECG", "Sleep Tracking"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 17,
+      "product_title": "Garmin Forerunner 945",
+      "product_image": "https://example.com/images/garmin_forerunner_945.jpg",
+      "category": "Smartwatch",
+      "price": 499.99,
+      "description": "Premium GPS smartwatch for runners and athletes.",
+      "Specification": ["GPS", "Heart Rate Monitor", "VO2 Max"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": 18,
+      "product_title": "MacBook Pro 14 M1",
+      "product_image": "https://example.com/images/macbook_pro_14_m1.jpg",
+      "category": "MacBook",
+      "price": 1999.99,
+      "description": "Apple's powerful laptop with M1 Pro chip.",
+      "Specification": ["Apple M1 Pro", "16GB RAM", "512GB SSD", "14-inch Retina Display"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 19,
+      "product_title": "MacBook Air M2",
+      "product_image": "https://example.com/images/macbook_air_m2.jpg",
+      "category": "MacBook",
+      "price": 1299.99,
+      "description": "Lightweight and fast, equipped with the new M2 chip.",
+      "Specification": ["Apple M2", "8GB RAM", "256GB SSD", "13.6-inch Retina Display"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 20,
+      "product_title": "MacBook Pro 16 M1 Max",
+      "product_image": "https://example.com/images/macbook_pro_16_m1_max.jpg",
+      "category": "MacBook",
+      "price": 3499.99,
+      "description": "High-end laptop with powerful M1 Max chip for professionals.",
+      "Specification": ["Apple M1 Max", "32GB RAM", "1TB SSD", "16-inch Retina Display"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": 21,
+      "product_title": "iPhone 14",
+      "product_image": "https://example.com/images/iphone_14.jpg",
+      "category": "iPhone",
+      "price": 799.99,
+      "description": "Latest iPhone with improved battery life and new camera features.",
+      "Specification": ["128GB Storage", "6.1-inch Display", "Dual Camera"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 22,
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "category": "iPhone",
+      "price": 999.99,
+      "description": "Advanced iPhone model with ProMotion display and triple camera.",
+      "Specification": ["256GB Storage", "6.1-inch Display", "Triple Camera"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 23,
+      "product_title": "iPhone 14 Pro Max",
+      "product_image": "https://example.com/images/iphone_14_pro_max.jpg",
+      "category": "iPhone",
+      "price": 1099.99,
+      "description": "Largest iPhone with extensive battery life and triple-camera system.",
+      "Specification": ["512GB Storage", "6.7-inch Display", "Triple Camera"],
+      "availability": false,
+      "rating": 4.8
+    }
+  ]
+  
