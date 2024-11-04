@@ -1,7 +1,7 @@
 import { Navigate, NavLink } from "react-router-dom";
 
 const ProductSingleCard = ({card}) => {
-    const {product_title,price,product_image }= card;
+    const {product_title,price,product_image,product_id}= card;
     return (
 <div className="card bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
@@ -14,7 +14,7 @@ const ProductSingleCard = ({card}) => {
     <h2 className="card-title">{product_title}</h2>
     <p className="text-lg font-medium">Price: {price} $</p>
     <div className="card-actions">
-      <button className="btn btn-primary"><NavLink to={"/productDetails"}>View Details</NavLink></button>
+      <button className="text-[#9538E2] border-2 border-[#9538E2] px-5 py-3 rounded-full"><NavLink to={`/productDetails/${product_id}`}>View Details</NavLink></button>
     </div>
   </div>
 </div>

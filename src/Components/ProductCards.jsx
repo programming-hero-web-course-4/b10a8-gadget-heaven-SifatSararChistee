@@ -15,8 +15,6 @@ const ProductCards = () => {
             setProducts(data)
         }
     },[category, data])
-    console.log(category)
-    console.log(data);
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-10"> 
         {
