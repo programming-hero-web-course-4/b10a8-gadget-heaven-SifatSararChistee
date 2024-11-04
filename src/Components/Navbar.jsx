@@ -1,15 +1,17 @@
 import { NavLink } from "react-router-dom";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
 
 const links =<>
-        <li><NavLink to={"/"}>Home</NavLink></li>
-        <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
-        <li><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
+        <li className="mr-5 mb-2 text-lg"><NavLink to={"/"}>Home</NavLink></li>
+        <li className="mr-5 mb-2 text-lg"><NavLink to={"/statistics"}>Statistics</NavLink></li>
+        <li className="mr-5 mb-2 text-lg"><NavLink to={"/dashboard"}>Dashboard</NavLink></li>
 </>
 
     return (
-<div className="navbar bg-base-100">
+<div className="navbar mt-8">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,16 +34,16 @@ const links =<>
             {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl"><NavLink to={"/"}>Gadget Heaven</NavLink></a>
+    <a className="btn btn-ghost text-2xl"><NavLink to={"/"}>Gadget Heaven</NavLink></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
         {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-    <a className="btn">Button</a>
+  <div className="navbar-end flex gap-5">
+    <a className="btn text-2xl"><MdOutlineShoppingCart /></a>
+    <a className="btn text-2xl"><FaRegHeart /></a>
   </div>
 </div>
     );
