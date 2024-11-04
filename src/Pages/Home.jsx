@@ -10,7 +10,7 @@ const Home = () => {
         <Banner></Banner>
         </div>
         <h1 className="text-4xl font-bold text-center mb-7">Explore Cutting-Edge Gadgets</h1>
-        <div className="flex">
+        <div className="flex gap-7 w-full">
         <Products category={category}></Products>
         <Outlet></Outlet>
         </div>

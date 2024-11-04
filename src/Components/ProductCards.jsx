@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import ProductSingleCard from "./ProductSingleCard";
 
 
 const ProductCards = () => {
@@ -6,8 +7,10 @@ const ProductCards = () => {
     const obj = useParams()
     console.log(data);
     return (
-        <div className="text-7xl">
-            Products
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10"> 
+        {
+            data.map(card => <ProductSingleCard key={card.product_id} card={card}></ProductSingleCard>)
+        }
         </div>
     );
 };
