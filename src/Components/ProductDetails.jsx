@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Rating from "react-rating";
 import { useLoaderData, useParams } from "react-router-dom";
-
+import { IoCartSharp } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
+import { addToCart, addToWish } from "../Utilities";
 const ProductDetails = () => {
     const { product_id }= useParams();
     const data = useLoaderData()
@@ -10,11 +12,19 @@ const ProductDetails = () => {
         const singleProduct = data.find(product=> product.product_id == product_id)
         setProduct(singleProduct)
     },[data, product_id])
-const array=(product.Specification)
+
+
+    const handleAddToCart=(product)=>{
+        addToCart(product)
+    }
+    const handleWishBtn=(product)=>{
+        addToWish(product)
+    }
+
     return (
         <div>
             <div className="bg-[#9538E2] text-center pt-16 pb-56 rounded-xl"> 
-            <h1 className="text-4xl text-white font-extrabold pb-4">Product Details{product_id}</h1>
+            <h1 className="text-4xl text-white font-extrabold pb-4">Product Details</h1>
             <p className="text-xl text-white font-normal">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
             </div>
             
@@ -54,8 +64,8 @@ const array=(product.Specification)
 
                     </div>
                     <div className="card-actions">
-                    <button className="btn btn-primary">Add to Card</button>
-                    <button className="btn">Add to wishlist</button>
+                    <button className="btn bg-[#9538E2] rounded-full text-white text-lg px-7" onClick={()=>handleAddToCart(product)}>Add to Cart <IoCartSharp /></button>
+                    <button onClick={()=>handleWishBtn(product)} className="btn bg-[#9538E2] rounded-full text-white text-lg px-7">Add to wishlist <FaHeart /></button>
                     </div>
                 </div>
                 </div>
