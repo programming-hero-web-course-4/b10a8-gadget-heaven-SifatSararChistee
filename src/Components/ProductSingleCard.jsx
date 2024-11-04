@@ -1,3 +1,5 @@
+import { Navigate, NavLink } from "react-router-dom";
+
 const ProductSingleCard = ({card}) => {
     const {product_title,price,product_image }= card;
     return (
@@ -12,7 +14,7 @@ const ProductSingleCard = ({card}) => {
     <h2 className="card-title">{product_title}</h2>
     <p className="text-lg font-medium">Price: {price} $</p>
     <div className="card-actions">
-      <button className="btn btn-primary">View Details</button>
+      <button className="btn btn-primary"><NavLink to={"/productDetails"}>View Details</NavLink></button>
     </div>
   </div>
 </div>
