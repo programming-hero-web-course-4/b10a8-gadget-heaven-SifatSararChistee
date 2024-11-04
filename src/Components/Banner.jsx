@@ -16,7 +16,7 @@ const Banner = () => {
         
         </div>
 
-        <div className="w-2/3 mx-auto border-2 border-[#FFFFFF4D] p-4 rounded-xl h-[560px] bg-[#FFFFFF4D] relative          lg:-top-56 -top-28">
+        <div className="w-2/3 mx-auto border-2 border-[#FFFFFF4D] p-4 rounded-xl bg-[#FFFFFF4D] relative lg:-top-56 -top-28">
         <img  className="rounded-xl" src={bannerImg} alt="bannerImg" />
         </div>
 
