@@ -12,15 +12,15 @@ const Heading = ({tittle, subTittle}) => {
          {
             pathname ==='/dashboard' && 
             <div className="flex gap-5">       
-                <NavLink to={"/dashboard"} className={({isActive})=>`${isActive? "text-black bg-white btn rounded-full" : "bg-red-500 text-black btn rounded-full" }`}   >Cart</NavLink>
-                <NavLink to={"/dashboard/wishlist"} className={({isActive})=>`${isActive? "btn rounded-full bg-white text-black" : " bg-[#9538E2] text-white btn rounded-full" }`}>Wishlist</NavLink>
+                <NavLink to={"/dashboard"} className={({isActive})=>`${isActive? "text-black bg-white btn rounded-full px-7" : "bg-red-500 text-black btn rounded-full" }`}   >Cart</NavLink>
+                <NavLink to={"/dashboard/wishlist"} className={({isActive})=>`${isActive? "btn rounded-full bg-white text-black" : " bg-[#9538E2] text-white btn rounded-full px-7" }`}>Wishlist</NavLink>
             </div>
          }
          {
             pathname ==='/dashboard/wishlist' && 
             <div className="flex gap-5">       
-                <NavLink to={"/dashboard"} className={({isActive})=>`${isActive? "btn rounded-full bg-[#9538E2] text-white " : "bg-[#9538E2] text-white btn rounded-full" }`}   >Cart</NavLink>
-                <NavLink to={"/dashboard/wishlist"} className={({isActive})=>`${isActive? "btn rounded-full text-black" : "bg-[#9538E2] text-white  btn rounded-full" }`}>Wishlist</NavLink>
+                <NavLink to={"/dashboard"} className={({isActive})=>`${isActive? "btn rounded-full bg-[#9538E2] text-white px-7" : "px-7 bg-[#9538E2] text-white btn rounded-full" }`}   >Cart</NavLink>
+                <NavLink to={"/dashboard/wishlist"} className={({isActive})=>`${isActive? "btn rounded-full text-black px-7" : "bg-[#9538E2] text-white px-7 btn rounded-full" }`}>Wishlist</NavLink>
             </div>
          }
         </div>
