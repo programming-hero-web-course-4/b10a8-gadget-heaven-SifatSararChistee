@@ -14,21 +14,30 @@ const Navbar = () => {
   };
   const [products, setProducts] = useState([]);
   const [productsWish, setProductsWish] = useState([]);
-const [counter, setCounter]= useState(0)
+  const [counter, setCounter]= useState(0)
+  const [counterWish, setCounterWish]= useState(0)
 
 useEffect(()=>{
   const all = getAllProducts()
   setProducts(all)
-  setCounter(all.length)
-},[products])
-
-const [counterWish, setCounterWish]= useState(0)
+},[])
 
 useEffect(()=>{
   const all = getAllProductsToWish()
   setProductsWish(all)
-  setCounterWish(all.length)
-},[productsWish])
+},[])
+
+useEffect(() => {
+  setCounter(products.length);
+}, [products]); // Update counter when products change
+
+// Update wishlist counter whenever productsWish change
+useEffect(() => {
+  setCounterWish(productsWish.length);
+}, [productsWish]); 
+
+
+
 
 const links =<>
         <li className="mr-5 mb-2 text-lg"><NavLink 
