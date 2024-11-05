@@ -12,6 +12,7 @@ import ProductDetails from './Components/ProductDetails';
 import { Toaster } from "react-hot-toast";
 import Cart from './Components/cart';
 import Wishlist from './Components/Wishlist';
+import Offers from './Components/Offers';
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics/>,
+      },
+      {
+        path: "/offers",
+        element: <Offers/>,
       },
       {
         path: "/dashboard",
