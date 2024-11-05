@@ -1,13 +1,32 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import { TiDelete } from "react-icons/ti";
 
 const ProductSingleCard = ({card}) => {
     const {pathname} = useLocation()
+    const {category} = useParams()
+    console.log(category)
     const {product_title,price,product_image,product_id, description}= card;
     return (
       <>
       {
         pathname ==='/' && <div className="card bg-base-100 shadow-xl">
+        <figure className="px-10 pt-10">
+          <img
+            src={product_image}
+            alt={product_title}
+            className="rounded-xl h-[180px] w-full object-cover" />
+        </figure>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title">{product_title}</h2>
+          <p className="text-lg font-medium">Price: {price} $</p>
+          <div className="card-actions">
+            <button className="text-[#9538E2] border-2 border-[#9538E2] px-5 py-3 rounded-full"><NavLink to={`/productDetails/${product_id}`}>View Details</NavLink></button>
+          </div>
+        </div>
+      </div>
+      }
+      {
+        pathname ===`/category/${category}`  && <div className="card bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img
             src={product_image}
