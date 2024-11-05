@@ -4,7 +4,6 @@ import { TiDelete } from "react-icons/ti";
 const ProductSingleCard = ({card}) => {
     const {pathname} = useLocation()
     const {category} = useParams()
-    console.log(category)
     const {product_title,price,product_image,product_id, description}= card;
     return (
       <>
