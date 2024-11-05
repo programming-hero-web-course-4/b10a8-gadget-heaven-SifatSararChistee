@@ -6,6 +6,7 @@ import { getAllProducts, getAllProductsToWish } from "../Utilities";
 
 const Navbar = () => {
   const [products, setProducts] = useState([]);
+  const [productsWish, setProductsWish] = useState([]);
 const [counter, setCounter]= useState(0)
 
 useEffect(()=>{
@@ -18,9 +19,9 @@ const [counterWish, setCounterWish]= useState(0)
 
 useEffect(()=>{
   const all = getAllProductsToWish()
-  setProducts(all)
-  setCounter(all.length)
-},[products])
+  setProductsWish(all)
+  setCounterWish(all.length)
+},[productsWish])
 const links =<>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/"}>Home</NavLink></li>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/statistics"}>Statistics</NavLink></li>
