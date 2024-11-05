@@ -57,8 +57,8 @@ const ProductDetails = () => {
                         className="text-orange-400"
                           initialRating= {product.rating}
                           readonly 
-                          emptySymbol="fa fa-star-o fa-2x"  // empty star
-                        fullSymbol="fa fa-star fa-2x"      // filled star
+                          emptySymbol="fa fa-star-o fa-2x" 
+                        fullSymbol="fa fa-star fa-2x" 
                         />
                          <span className="text-2xl font-bold text-blue-700">{product.rating}</span>
                         </div>

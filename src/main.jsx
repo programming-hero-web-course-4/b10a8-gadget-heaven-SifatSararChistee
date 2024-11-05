@@ -10,6 +10,8 @@ import Dashboard from './Pages/Dashboard';
 import ProductCards from './Components/ProductCards';
 import ProductDetails from './Components/ProductDetails';
 import { Toaster } from "react-hot-toast";
+import Cart from './Components/cart';
+import Wishlist from './Components/Wishlist';
 
 
 const router = createBrowserRouter([
@@ -47,6 +49,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard/>,
+        children:[
+          {
+            path: "/dashboard",
+            element: <Cart/>,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <Wishlist/>,
+          },
+        ]
       },
     ],
   },
