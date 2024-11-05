@@ -3,21 +3,33 @@ import Rating from "react-rating";
 import { useLoaderData, useParams } from "react-router-dom";
 import { IoCartSharp } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
-import { addToCart, addToWish } from "../Utilities";
+import { addToCart, addToWish, getAllProductsToWish } from "../Utilities";
 const ProductDetails = () => {
     const { product_id }= useParams();
     const data = useLoaderData()
     const [product, setProduct] = useState({})
+    const [Wishlist, setWishlist] = useState(false)
+
+
     useEffect(()=>{
         const singleProduct = data.find(product=> product.product_id == product_id)
         setProduct(singleProduct)
+        const addedProductToWish = getAllProductsToWish();
+        const isExist = addedProductToWish.find(
+          (item) => item.product_id == product.product_id
+        );
+        if (isExist) {
+            setWishlist(true)
+        }
     },[data, product_id])
 
     const handleAddToCart=(product)=>{
         addToCart(product)
+        setWishlist(true)
     }
     const handleWishBtn=(product)=>{
         addToWish(product)
+        setWishlist(true)
     }
     return (
         <div>
@@ -66,7 +78,7 @@ const ProductDetails = () => {
                     </div>
                     <div className="card-actions">
                     <button className="btn bg-[#9538E2] rounded-full text-white text-lg px-7" onClick={()=>handleAddToCart(product)}>Add to Cart <IoCartSharp /></button>
-                    <button onClick={()=>handleWishBtn(product)} className="btn bg-[#9538E2] rounded-full text-white text-lg px-7">Add to wishlist <FaHeart /></button>
+                    <button disabled={Wishlist} onClick={()=>handleWishBtn(product)} className="btn bg-[#9538E2] rounded-full text-white text-lg px-7">Add to wishlist <FaHeart /></button>
                     </div>
                 </div>
                 </div>

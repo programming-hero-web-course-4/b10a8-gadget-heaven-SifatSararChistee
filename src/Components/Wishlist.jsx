@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import ProductSingleCard from "./ProductSingleCard";
-import { getAllProducts } from "../Utilities";
+import { getAllProductsToWish } from "../Utilities";
 
 
 const Wishlist = () => {
     const [products, setProducts]=useState([])
     useEffect(()=>{
-        const addedProducts = getAllProducts()
+        const addedProducts = getAllProductsToWish()
         setProducts(addedProducts)
     },[])
     return (
