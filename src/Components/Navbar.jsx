@@ -60,8 +60,8 @@ const links =<>
     </ul>
   </div>
   <div className="navbar-end flex gap-5">
-    <a className="btn bg-white text-2xl"><MdOutlineShoppingCart /><span className="text-lg font-bold -top-5 relative">{counter}</span></a>
-    <a className="btn text-2xl"><FaRegHeart /> <span className="text-lg font-bold -top-5 relative">{counterWish}</span></a>
+    <a className="flex items-center justify-center bg-white text-2xl rounded-full px-4 p-5 shadow-xl"><MdOutlineShoppingCart /><span className="text-lg font-bold -top-5 relative">{counter}</span></a>
+    <a className="text-2xl bg-white flex items-center justify-center rounded-full px-4 py-5 shadow-xl"><FaRegHeart /> <span className="text-lg font-bold -top-5 relative">{counterWish}</span></a>
   </div>
 </div>
     );
