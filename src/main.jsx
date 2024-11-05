@@ -13,7 +13,7 @@ import { Toaster } from "react-hot-toast";
 import Cart from './Components/cart';
 import Wishlist from './Components/Wishlist';
 import Offers from './Components/Offers';
-
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -72,7 +72,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Toaster></Toaster>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <Toaster />
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>,
 )
