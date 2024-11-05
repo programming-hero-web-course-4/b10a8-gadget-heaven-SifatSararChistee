@@ -8,8 +8,6 @@ const Dashboard = () => {
     return (
         <div className="text-xl">
             <Heading tittle={tittle} subTittle={subTittle}></Heading>
-            <NavLink to={"/dashboard"} className="btn">Cart</NavLink>
-            <NavLink to={"/dashboard/wishlist"} className="btn">Wishlist</NavLink>
             <Outlet></Outlet>
         </div>
 
