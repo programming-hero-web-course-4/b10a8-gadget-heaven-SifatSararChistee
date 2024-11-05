@@ -2,15 +2,25 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { getAllProducts } from "../Utilities";
+import { getAllProducts, getAllProductsToWish } from "../Utilities";
 
 const Navbar = () => {
-
+  const [products, setProducts] = useState([]);
 const [counter, setCounter]= useState(0)
+
 useEffect(()=>{
   const all = getAllProducts()
+  setProducts(all)
   setCounter(all.length)
-},[])
+},[products])
+
+const [counterWish, setCounterWish]= useState(0)
+
+useEffect(()=>{
+  const all = getAllProductsToWish()
+  setProducts(all)
+  setCounter(all.length)
+},[products])
 const links =<>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/"}>Home</NavLink></li>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/statistics"}>Statistics</NavLink></li>
@@ -49,8 +59,8 @@ const links =<>
     </ul>
   </div>
   <div className="navbar-end flex gap-5">
-    <a className="btn bg-white text-2xl"><MdOutlineShoppingCart /><span  id="cart" className="text-lg font-bold -top-5 relative">{counter}</span></a>
-    <a className="btn text-2xl"><FaRegHeart /></a>
+    <a className="btn bg-white text-2xl"><MdOutlineShoppingCart /><span className="text-lg font-bold -top-5 relative">{counter}</span></a>
+    <a className="btn text-2xl"><FaRegHeart /> <span className="text-lg font-bold -top-5 relative">{counterWish}</span></a>
   </div>
 </div>
     );

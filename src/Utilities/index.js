@@ -24,7 +24,6 @@ const addToCart = (product) => {
 
 const getAllProductsToWish = () => {
   const all = localStorage.getItem("addedProductToWish");
-
   if (all) {
     const addedProduct = JSON.parse(all);
     return addedProduct;

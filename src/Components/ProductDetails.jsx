@@ -16,7 +16,7 @@ const ProductDetails = () => {
         setProduct(singleProduct)
         const addedProductToWish = getAllProductsToWish();
         const isExist = addedProductToWish.find(
-          (item) => item.product_id == product.product_id
+        (item) => item.product_id == product.product_id
         );
         if (isExist) {
             setWishlist(true)
