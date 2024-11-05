@@ -12,7 +12,7 @@ const getBackgroundColor = () => {
 
     return (
     <>
-    <div className="max-w-screen-xl mx-auto w-11/12">
+    <div className="max-w-screen-2xl mx-auto w-11/12">
         <div className={`rounded-t-2xl ${getBackgroundColor()}`}><Navbar></Navbar></div>
         <Outlet></Outlet>
         <Footer></Footer>

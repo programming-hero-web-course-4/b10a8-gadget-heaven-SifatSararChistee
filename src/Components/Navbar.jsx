@@ -76,7 +76,7 @@ const links =<>
 </>
 
     return (
-<div className="navbar mt-8">
+<div className="navbar mt-8 pt-5 px-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
