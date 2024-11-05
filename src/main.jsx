@@ -9,6 +9,7 @@ import Statistics from './Pages/Statistics';
 import Dashboard from './Pages/Dashboard';
 import ProductCards from './Components/ProductCards';
 import ProductDetails from './Components/ProductDetails';
+import { Toaster } from "react-hot-toast";
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Toaster></Toaster>
     <RouterProvider router={router} />
   </StrictMode>,
 )

@@ -1,9 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { getAllProducts } from "../Utilities";
 
 const Navbar = () => {
 
+const [counter, setCounter]= useState(0)
+useEffect(()=>{
+  const all = getAllProducts()
+  setCounter(all.length)
+},[])
 const links =<>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/"}>Home</NavLink></li>
         <li className="mr-5 mb-2 text-lg"><NavLink to={"/statistics"}>Statistics</NavLink></li>
@@ -42,7 +49,7 @@ const links =<>
     </ul>
   </div>
   <div className="navbar-end flex gap-5">
-    <a className="btn text-2xl"><MdOutlineShoppingCart /></a>
+    <a className="btn bg-white text-2xl"><MdOutlineShoppingCart /><span  id="cart" className="text-lg font-bold -top-5 relative">{counter}</span></a>
     <a className="btn text-2xl"><FaRegHeart /></a>
   </div>
 </div>
