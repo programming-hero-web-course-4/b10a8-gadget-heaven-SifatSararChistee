@@ -4,7 +4,7 @@ const Products = ({category}) => {
     return (
         <>
                         {/* product buttons */}
-                        <div className="bg-[#FFFFFF] shadow-xl">
+                        <div className="bg-[#FFFFFF] shadow-xl lg:sticky md:sticky top-16 z-20">
                        <Category category={category}></Category> 
                 </div>
         </>
