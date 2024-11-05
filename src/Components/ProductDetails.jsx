@@ -25,7 +25,6 @@ const ProductDetails = () => {
 
     const handleAddToCart=(product)=>{
         addToCart(product)
-        setWishlist(true)
     }
     const handleWishBtn=(product)=>{
         addToWish(product)
