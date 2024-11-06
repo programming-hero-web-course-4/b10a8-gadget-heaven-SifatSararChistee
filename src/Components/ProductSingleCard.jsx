@@ -47,10 +47,10 @@ const ProductSingleCard = ({card}) => {
           <div className="w-[200px] h-[130px]">
             <img className="h-full" src={product_image} alt="" />
           </div>
-          <div className=" w-full space-y-2">
-            <h1 className="font-bold">{product_title}</h1>
-            <p className="text-sm">{description}</p>
-            <p className="font-bold">Price: {price} $</p>
+          <div className="w-full space-y-2">
+            <h1 className="font-bold text-sm lg:text-2xl md:text-2xl">{product_title}</h1>
+            <p className="text-xs lg:text-lg md:text-lg">{description}</p>
+            <p className="font-bold text-sm lg:text-lg md:text-lg">Price: {price} $</p>
           </div>
           <div className="text-5xl text-red-600 cursor-pointer">
           <TiDelete />
@@ -66,10 +66,10 @@ const ProductSingleCard = ({card}) => {
             <img className="h-full" src={product_image} alt="" />
           </div>
           <div className=" w-full space-y-2">
-            <h1 className="font-bold">{product_title}</h1>
-            <p className="text-sm">{description}</p>
-            <p className="font-bold">Price: {price} $</p>
-            <button className="btn bg-[#9538E2] rounded-full text-white text-lg px-7">Add to Cart</button>
+            <h1 className="font-bold text-sm lg:text-2xl md:text-2xl">{product_title}</h1>
+            <p className="text-xs lg:text-lg md:text-lg">{description}</p>
+            <p className="font-bold text-sm lg:text-lg md:text-lg">Price: {price} $</p>
+            <button className="btn bg-[#9538E2] rounded-full text-white text-sm lg:text-lg md:text-lg px-7">Add to Cart</button>
           </div>
           <div className="text-5xl text-red-600 cursor-pointer">
           <TiDelete />

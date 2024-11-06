@@ -45,10 +45,10 @@ const Cart = () => {
 
     return (
         <div>
-            <div className="flex justify-between mt-5">
+            <div className="flex flex-col lg:flex-row md:flex-row lg:justify-between mt-5">
                 <p className="text-2xl font-extrabold">Cart</p>
                 <div className="flex gap-4 items-center"> 
-                <p className="text-2xl font-bold">Total Cost: <span className="font-normal">{totalCost}</span> $</p>
+                <p className="text-xl lg:text-2xl md:text-2xl font-bold">Total Cost: <span className="font-normal">{totalCost}</span> $</p>
                 <button onClick={handleSortBtn} className="btn rounded-full bg-[#9538E2] text-white">Sort by Price</button>
                 <button onClick={handlePurchase} disabled={purchase} className="btn rounded-full bg-[#9538E2] text-white">Purchase</button>
                 {showModal && (

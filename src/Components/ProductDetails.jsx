@@ -34,25 +34,25 @@ const ProductDetails = () => {
         <div>
             <div className="bg-[#9538E2] text-center pt-16 pb-56 rounded-xl"> 
             <h1 className="text-4xl text-white font-extrabold pb-4">Product Details</h1>
-            <p className="text-xl text-white font-normal">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
+            <p className="lg:text-xl text-base md:text-xl text-white font-normal">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br />the coolest accessories, we have it all!</p>
             </div>
             
-            <div className="card lg:card-side bg-base-100 shadow-xl w-3/4 mx-auto p-7 relative -top-40 h-[600px]">
-                <div className="w-1/2 rounded-lg h-[400px]">
+            <div className="card lg:card-side bg-base-100 shadow-xl w-3/4 mx-auto lg:p-7 p-2 relative -top-40 lg:h-[600px]">
+                <div className="lg:w-1/2 md:h-1/2 rounded-lg lg:h-[400px]">
                     <img
                     className="w-full h-full"
                     src={product.product_image}
                     alt="Album" />
                 </div>
-                <div className="card-body">
-                <h2 className="text-3xl font-bold"> {product.product_title} </h2>
-                    <p className="text-xl font-semibold">Price: {product.price} $</p>
+                <div className="card-body flex flex-col justify-center items-center lg:items-start md:items-center">
+                <h2 className="lg:text-3xl text-xl font-bold"> {product.product_title} </h2>
+                    <p className="lg:text-xl font-semibold">Price: {product.price} $</p>
                     
                     {product.availability ? (<div className="btn rounded-full w-32 text-black bg-[#a1ed86f1]">In Stock</div>) : (<div className="btn rounded-full text-white bg-red-500 w-32">Out of Stock</div>)}
                    
-                    <p className="text-xl font-light">{product.description}</p>
+                    <p className="lg:text-xl  lg:block md:block font-light">{product.description}</p>
                     <div>
-                        <h5 className="text-xl font-semibold">Specifications:</h5>
+                        <h5 className="lg:text-xl font-semibold">Specifications:</h5>
                         <div>
                         {
                         product.Specification?.map((spec, index) => (
@@ -62,7 +62,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <h5 className="text-xl font-semibold">Rating:</h5>
+                        <h5 className="lg:text-xl font-semibold">Rating:</h5>
                         <div className="flex gap-3">
                         <Rating
                         className="text-orange-400"
@@ -76,8 +76,8 @@ const ProductDetails = () => {
 
                     </div>
                     <div className="card-actions">
-                    <button className="btn bg-[#9538E2] rounded-full text-white text-lg px-7" onClick={()=>handleAddToCart(product)}>Add to Cart <IoCartSharp /></button>
-                    <button disabled={Wishlist} onClick={()=>handleWishBtn(product)} className="btn bg-[#9538E2] rounded-full text-white text-lg px-7">Add to wishlist <FaHeart /></button>
+                    <button className="btn bg-[#9538E2] rounded-full text-white text-sm lg:text-lg md:text-lg px-7" onClick={()=>handleAddToCart(product)}>Add to Cart <IoCartSharp /></button>
+                    <button disabled={Wishlist} onClick={()=>handleWishBtn(product)} className="btn bg-[#9538E2] rounded-full text-white text-sm lg:text-lg md:text-lg px-7">Add to wishlist <FaHeart /></button>
                     </div>
                 </div>
                 </div>
