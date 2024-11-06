@@ -32,13 +32,16 @@ GadgetHeaven is a responsive, modern e-commerce platform dedicated to providing 
 
   Used for more complex components (if any) where lifecycle methods were necessary (though functional components are preferred with hooks).
 
-- **JSX::**
+- **JSX:**
+
   The project uses JSX syntax to define UI elements in a declarative manner, allowing HTML-like syntax to be written within JavaScript.
 
-- **State::**
+- **State:**
+
   useState Hook: Used in functional components for managing local state (e.g., product quantity in the cart, wishlist items, etc.).
 
-- **Props::**
+- **Props:**
+
   Passed data from parent to child components, such as product details, cart data, and other dynamic content.
 
 - **Context API:**
@@ -69,7 +72,7 @@ GadgetHeaven is a responsive, modern e-commerce platform dedicated to providing 
 
 - **react & react**-dom: Core libraries for building and rendering the React app, essential for managing component structure and UI rendering.
 
-- **react-helmet-**async: Manages changes to the document head, such as meta tags for SEO, ensuring each page (like product details) is SEO-friendly and updates dynamically, which improves discoverability.
+- **react-helmet-async:** Manages changes to the document head, such as meta tags for SEO, ensuring each page (like product details) is SEO-friendly and updates dynamically, which improves discoverability.
 
 - **react-hot-toa**st: Provides a clean way to display toast notifications, such as confirming item additions to the cart or wishlist.
 
