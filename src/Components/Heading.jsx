@@ -7,7 +7,8 @@ const Heading = ({tittle, subTittle}) => {
 
         <div className="flex flex-col items-center justify-center space-y-7 pt-20">
         <h1 className="text-3xl lg:text-4xl md:text-5xl font-bold text-center">{tittle}</h1>
-         <p className="text-base font-normal text-center w-2/3">{subTittle}</p>
+         <p className={(pathname === "/offers"?"text-xs lg:text-base md:text-base  font-normal text-center w-2/3":"text-base font-normal text-center w-2/3" )}
+         >{subTittle}</p>
 
          {
             pathname ==='/dashboard' && 

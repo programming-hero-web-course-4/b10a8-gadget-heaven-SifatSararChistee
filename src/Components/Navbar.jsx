@@ -108,7 +108,7 @@ const links =<>
             {links}
       </ul>
     </div>
-    <p className={`btn btn-ghost text-lg md:text-2xl lg:text-2xl ${getBackgroundColor()}`}><NavLink to={"/"}>Gadget Heaven</NavLink></p>
+    <p className={`btn btn-ghost text-sm md:text-2xl lg:text-2xl ${getBackgroundColor()}`}><NavLink to={"/"}>Gadget Heaven</NavLink></p>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
