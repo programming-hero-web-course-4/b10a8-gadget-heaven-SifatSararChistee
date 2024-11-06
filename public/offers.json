@@ -1,0 +1,52 @@
+[
+    {
+      "offerId": 1,
+      "title": "20% Off on All Gaming Laptops",
+      "img": "https://i.ibb.co.com/rsSs82s/20-off.jpg",
+      "offerDate": "2024-11-06",
+      "description": "High-performance gaming laptop with 16GB RAM, NVIDIA RTX graphics, and 1TB SSD."
+    },
+    {
+      "offerId": 2,
+      "title": "CashBack Offer on All Smartphones",
+      "img": "https://i.ibb.co.com/H4S2wk5/cashback.jpg",
+      "offerDate": "2024-11-08",
+      "description": "Flagship smartphone with triple camera, 5G connectivity, and 256GB storage."
+    },
+    {
+      "offerId": 3,
+      "title": "Get a Free Backpack with MacBook Air M2",
+      "img": "https://i.ibb.co.com/v3284zq/mac-with-backpack.jpg",
+      "offerDate": "2024-11-10",
+      "description": "Lightweight and powerful MacBook Air with Apple M2 chip and 13-inch Retina display."
+    },
+    {
+      "offerId": 4,
+      "title": "100$ Discount on iPhone 15 Pro",
+      "img": "https://i.ibb.co.com/gPFmz8y/iphone.jpg",
+      "offerDate": "2024-11-15",
+      "description": "Latest iPhone model featuring A17 Bionic chip, 120Hz display, and improved battery life."
+    },
+    {
+      "offerId": 5,
+      "title": "15% Off on Wireless Charging Dock",
+      "img": "  https://i.ibb.co.com/p2bHMTV/charging-dock.jpg",
+      "offerDate": "2024-11-18",
+      "description": "Convenient charging dock compatible with smartphones, smartwatches, and wireless earbuds."
+    },
+    {
+      "offerId": 6,
+      "title": "30% Off on Noise-Canceling Headphones",
+      "img": "https://i.ibb.co.com/Y817gwx/Sony-Wireless-Noise-Cancelling-Over-Ear-Headphones-Silver-Tone.jpg",
+      "offerDate": "2024-11-20",
+      "description": "Premium over-ear headphones with active noise-canceling and 30-hour battery life."
+    },
+    {
+      "offerId": 7,
+      "title": "8-in-1 Gadget Cleaning Kit only at 99$",
+      "img": "https://i.ibb.co.com/CmtQNmp/8-in-1-Ultimate-Swipe-Clean-Kit-Pink.jpg",
+      "offerDate": "2024-11-22",
+      "description": "Essential cleaning kit for laptops, smartphones, and other gadgets, includes microfiber cloth."
+    }
+  ]
+  

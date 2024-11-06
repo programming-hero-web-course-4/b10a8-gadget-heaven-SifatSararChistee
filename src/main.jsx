@@ -14,6 +14,7 @@ import Cart from './Components/cart';
 import Wishlist from './Components/Wishlist';
 import Offers from './Components/Offers';
 import { HelmetProvider } from 'react-helmet-async';
+import OfferCards from './Components/OfferCards';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,13 @@ const router = createBrowserRouter([
       {
         path: "/offers",
         element: <Offers/>,
+        children:[
+          {
+            path: "/offers",
+            element: <OfferCards/>,
+            loader: ()=> fetch("../offers.json")
+          }
+        ]
       },
       {
         path: "/dashboard",
