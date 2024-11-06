@@ -1,4 +1,5 @@
 import Category from "./category";
+import PropTypes from 'prop-types';
 
 const Products = ({category}) => {
     return (
@@ -10,5 +11,9 @@ const Products = ({category}) => {
         </>
 
 )};
+
+Products.propTypes = {
+    category: PropTypes.array
+  };
 
 export default Products;

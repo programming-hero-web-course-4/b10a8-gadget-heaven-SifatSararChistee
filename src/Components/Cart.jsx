@@ -31,6 +31,8 @@ const Cart = () => {
 
     const handlePurchase = () => {
         setShowModal(true);
+        localStorage.removeItem("addedProduct");
+        setProducts([]); 
     };
 
     const handleCloseModal = () => {
@@ -38,8 +40,6 @@ const Cart = () => {
         if (modalRef.current) {
             modalRef.current.close();
         }
-        setProducts([]); 
-        localStorage.removeItem("addedProduct");
         navigate("/");
     };
 
@@ -66,7 +66,6 @@ const Cart = () => {
                                 </div>
                                 <h3 className="font-bold text-lg">Purchase Successful!</h3>
                                 <p className="py-4">Thank you for your purchase.</p>
-                                <p>Total Cost: {totalCost}</p>
                                 <div className="modal-action">
                                     <button onClick={handleCloseModal} className="btn">
                                         Close

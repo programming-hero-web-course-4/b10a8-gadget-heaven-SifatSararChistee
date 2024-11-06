@@ -1,5 +1,6 @@
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import { TiDelete } from "react-icons/ti";
+import PropTypes from 'prop-types';
 
 const ProductSingleCard = ({card, handleDelete,handleDeleteWish}) => {
     const {pathname} = useLocation()
@@ -82,5 +83,12 @@ const ProductSingleCard = ({card, handleDelete,handleDeleteWish}) => {
       </>
     );
 };
+
+ProductSingleCard.propTypes = {
+  card: PropTypes.object,
+  handleDelete: PropTypes.func,
+  handleDeleteWish: PropTypes.func
+};
+
 
 export default ProductSingleCard;

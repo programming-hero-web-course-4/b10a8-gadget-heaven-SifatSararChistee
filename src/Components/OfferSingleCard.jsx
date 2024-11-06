@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 const OfferSingleCard = ({offer}) => {
     const navigate =useNavigate()
@@ -21,6 +23,10 @@ const OfferSingleCard = ({offer}) => {
         </div>
       </div>
     );
+};
+
+OfferSingleCard .propTypes = {
+  offer: PropTypes.object
 };
 
 export default OfferSingleCard;

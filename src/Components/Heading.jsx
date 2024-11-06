@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Heading = ({tittle, subTittle}) => {
     const {pathname} =useLocation()
@@ -29,5 +30,12 @@ const Heading = ({tittle, subTittle}) => {
 
     );
 };
+
+Heading.propTypes = {
+    tittle: PropTypes.string,
+    subTittle: PropTypes.string
+  };
+
+
 
 export default Heading;
