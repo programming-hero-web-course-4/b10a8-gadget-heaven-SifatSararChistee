@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ProductSingleCard from "./ProductSingleCard";
-import { getAllProducts } from "../Utilities";
+import { deleteFromCart, getAllProducts } from "../Utilities";
 import { useNavigate } from "react-router-dom";
 import PaymentLogo from "../assets/Group.png"
 
@@ -43,6 +43,13 @@ const Cart = () => {
         navigate("/");
     };
 
+    const handleDelete =(id)=>{
+        deleteFromCart(id)
+        const addedProducts = getAllProducts();
+        setProducts(addedProducts);
+    }
+
+
     return (
         <div>
             <div className="flex flex-col lg:flex-row md:flex-row lg:justify-between mt-5">
@@ -73,7 +80,7 @@ const Cart = () => {
             <div className="flex flex-col gap-6 w-11/12 mx-auto">
                 
                             {
-                                products.map(card => <ProductSingleCard key={card.product_id} card={card}></ProductSingleCard>)
+                                products.map(card => <ProductSingleCard handleDelete={handleDelete} key={card.product_id} card={card}></ProductSingleCard>)
                             }
                 
             </div>

@@ -1,10 +1,12 @@
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import { TiDelete } from "react-icons/ti";
 
-const ProductSingleCard = ({card}) => {
+const ProductSingleCard = ({card, handleDelete,handleDeleteWish}) => {
     const {pathname} = useLocation()
     const {category} = useParams()
+    const navigate = useNavigate()
     const {product_title,price,product_image,product_id, description}= card;
+
     return (
       <>
       {
@@ -52,7 +54,7 @@ const ProductSingleCard = ({card}) => {
             <p className="text-xs lg:text-lg md:text-lg">{description}</p>
             <p className="font-bold text-sm lg:text-lg md:text-lg">Price: {price} $</p>
           </div>
-          <div className="text-5xl text-red-600 cursor-pointer">
+          <div onClick={()=>handleDelete(product_id)} className="text-5xl text-red-600 cursor-pointer">
           <TiDelete />
           </div>
         </div>
@@ -69,9 +71,9 @@ const ProductSingleCard = ({card}) => {
             <h1 className="font-bold text-sm lg:text-2xl md:text-2xl">{product_title}</h1>
             <p className="text-xs lg:text-lg md:text-lg">{description}</p>
             <p className="font-bold text-sm lg:text-lg md:text-lg">Price: {price} $</p>
-            <button className="btn bg-[#9538E2] rounded-full text-white text-sm lg:text-lg md:text-lg px-7">Add to Cart</button>
+            <button onClick={()=>navigate("/dashboard")} className="btn bg-[#9538E2] rounded-full text-white text-sm lg:text-lg md:text-lg px-7">Add to Cart</button>
           </div>
-          <div className="text-5xl text-red-600 cursor-pointer">
+          <div onClick={()=>handleDeleteWish(product_id)} className="text-5xl text-red-600 cursor-pointer">
           <TiDelete />
           </div>
         </div>

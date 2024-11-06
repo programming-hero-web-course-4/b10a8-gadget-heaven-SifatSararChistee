@@ -46,4 +46,24 @@ const addToWish = (product) => {
   toast.success("Successfully Added this Product to WishList");
 };
 
-export { addToCart, addToWish, getAllProducts, getAllProductsToWish };
+const deleteFromCart = (id) => {
+  const addedProduct = getAllProducts();
+  const remaining = addedProduct.filter((item) => item.product_id != id);
+  localStorage.setItem("addedProduct", JSON.stringify(remaining));
+  toast.success("Successfully removed from Cart");
+};
+const deleteFromWish = (id) => {
+  const addedProduct = getAllProductsToWish();
+  const remaining = addedProduct.filter((item) => item.product_id != id);
+  localStorage.setItem("addedProductToWish", JSON.stringify(remaining));
+  toast.success("Successfully removed from WishList");
+};
+
+export {
+  addToCart,
+  addToWish,
+  getAllProducts,
+  getAllProductsToWish,
+  deleteFromCart,
+  deleteFromWish,
+};

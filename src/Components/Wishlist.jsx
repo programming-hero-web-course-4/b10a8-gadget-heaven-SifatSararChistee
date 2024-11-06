@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductSingleCard from "./ProductSingleCard";
-import { getAllProductsToWish } from "../Utilities";
+import { deleteFromWish, getAllProductsToWish } from "../Utilities";
 
 
 const Wishlist = () => {
@@ -9,6 +9,13 @@ const Wishlist = () => {
         const addedProducts = getAllProductsToWish()
         setProducts(addedProducts)
     },[])
+
+    const handleDeleteWish =(id)=>{
+        deleteFromWish(id)
+        const addedProducts = getAllProductsToWish();
+        setProducts(addedProducts);
+    }
+
     return (
         <div>
                         <div className="flex justify-between">
@@ -17,7 +24,7 @@ const Wishlist = () => {
             <div className="flex flex-col gap-6 w-11/12 mx-auto">
                 
                             {
-                                products.map(card => <ProductSingleCard key={card.product_id} card={card}></ProductSingleCard>)
+                                products.map(card => <ProductSingleCard handleDeleteWish={handleDeleteWish} key={card.product_id} card={card}></ProductSingleCard>)
                             }
                 
             </div>
