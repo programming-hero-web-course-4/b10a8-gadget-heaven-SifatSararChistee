@@ -2,7 +2,7 @@
 
 # Project Live link
 
-Project link: https://selectyourdream11.netlify.app
+Project link: https://gadgetsofheaven.netlify.app
 
 # Project Description:
 
