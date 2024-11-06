@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Heading from "../Components/Heading";
 import { Helmet } from 'react-helmet-async';
 
@@ -11,6 +12,7 @@ const Statistics = () => {
         <meta name="description" content="View statistics of our store's performance" />
       </Helmet>
            <Heading tittle={tittle} subTittle={subTittle}></Heading>
+           <Outlet></Outlet>
         </div>
     );
 };

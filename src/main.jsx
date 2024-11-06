@@ -15,6 +15,7 @@ import Wishlist from './Components/Wishlist';
 import Offers from './Components/Offers';
 import { HelmetProvider } from 'react-helmet-async';
 import OfferCards from './Components/OfferCards';
+import BarChart from './Components/BarChart';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,12 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics/>,
+        children:[
+          {
+            path:"/statistics",
+            element: <BarChart/>,
+          }
+        ]
       },
       {
         path: "/offers",
